@@ -11,3 +11,15 @@ server:
   servlet:
     context-path: /uaa
   port: 5000
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+

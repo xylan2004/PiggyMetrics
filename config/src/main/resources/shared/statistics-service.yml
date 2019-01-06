@@ -23,3 +23,15 @@ server:
 
 rates:
   url: https://api.exchangeratesapi.io
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
